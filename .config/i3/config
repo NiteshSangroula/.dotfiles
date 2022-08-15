@@ -176,6 +176,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        position top
 }
 
 # Make the currently focused window a scratchpad
@@ -189,3 +190,5 @@ bindsym mod4+s [title="^Sup ::"] scratchpadd
 bindsym $mod+F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle # Mute
 bindsym $mod+F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%  # Up
 bindsym $mod+F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%  # Down
+
+exec_always ./Desktop/scripts/set.sh
