@@ -12,6 +12,8 @@ for _, lsp in ipairs(servers) do
 
         on_attach = function()
             print("Hello nitesh")
+            local opts = { noremap=true, silent=true }
+
             vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
 
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = 0 })
