@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 #setup script
 xmodmap ~/.config/.Xmodmap
 nitrogen --restore

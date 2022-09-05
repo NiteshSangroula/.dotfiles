@@ -191,5 +191,8 @@ bindsym $mod+F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle # Mute
 bindsym $mod+F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%  # Up
 bindsym $mod+F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%  # Down
 
-exec_always set.sh
-
+# startup scripts
+exec_always xmodmap ~/.config/.Xmodmap
+exec_always nitrogen --restore
+exec_always picom -b
+exec_always clear
