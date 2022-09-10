@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
 
     -- colorscheme
     use("morhetz/gruvbox")
+    use("folke/tokyonight.nvim")
 
     use("neovim/nvim-lspconfig") -- Configurations for Nvim LSP
 
