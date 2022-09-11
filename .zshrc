@@ -102,3 +102,4 @@ source $ZSH/oh-my-zsh.sh
 #
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+bindkey "^U" backward-kill-line
